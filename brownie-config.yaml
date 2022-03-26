@@ -1,0 +1,27 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.5.0
+ 
+  
+
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.5.0'
+     
+    
+
+networks :
+
+    bsc-main:
+      factory: '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
+      router:  '0x10ED43C718714eb63d5aA57B78B54704E256024E'
+    bsc-test:
+      factory: '0x6725F303b657a9451d8BA641348b6761A6CC7a17'
+      router:  '0xD99D1c33F9fC3444f8101754aBC46c52416550D1'
+
+    default: bsc-2-fork
+
+    bsc-2-fork:
+      factory: '0x6725F303b657a9451d8BA641348b6761A6CC7a17'
+      router:  '0xD99D1c33F9fC3444f8101754aBC46c52416550D1'
+      
